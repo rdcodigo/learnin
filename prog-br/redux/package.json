@@ -1,0 +1,25 @@
+{
+  "name": "redux-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rdcodigo/redux-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rdcodigo/redux-example/issues"
+  },
+  "homepage": "https://github.com/rdcodigo/redux-example#readme",
+  "dependencies": {
+    "node-fetch": "^3.2.10",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.1"
+  }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 005 Listas</title>
+
+    <script>
+        const lista = [1, 2, 3, 4, 5, 6, 7]
+        
+        console.log(`\n Falar se um número é par ou ímpar com forEach`)
+
+        lista.forEach((numero)=>{
+            if (numero%2 == 0){
+                console.log(`O número ${numero} é par`)
+            } else{
+                console.log(`O número ${numero} é impar`)
+            }
+        })
+
+        console.log(`\n Separar a lista em duas, uma par e outra ímpar com filter`)
+
+        const listaPar = lista.filter((numero)=>{
+            return numero%2 == 0
+        })
+
+        const listaImpar = lista.filter((numero)=>{
+            return numero%2 != 0
+        })
+
+        console.log(listaPar)
+        console.log(listaImpar)
+
+        console.log(`\n Criando nova lista com multiplos utilizando map`)
+
+        const novaLista = lista.map((numero)=>{
+            if(numero%2 == 0){
+                return numero*2
+            } else{
+                return numero*3
+            }
+        })
+
+        console.log(novaLista)
+
+        console.log(`\n Simulando o forEach com for`)
+        
+
+        function parImpar (numero){
+            if(numero%2){
+                console.log(`O número ${numero} é Ímpar`)
+            }else{
+                console.log(`O número ${numero} é Par`)
+            }
+        }
+
+        function forEach(lista,  callback = ()=>{}) {
+            for (i=0; i<lista.length; i++){
+                callback(lista[i])
+            }
+        }
+
+        forEach(lista, parImpar)
+
+
+        console.log(`\n Reduzindo lista com reduce`)
+
+        calc = (acc, numero)=>{
+            if(numero%2){
+                return acc*numero
+            }else{
+                return acc+numero
+            }
+        }
+
+        console.log(lista.reduce(calc, 0))
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

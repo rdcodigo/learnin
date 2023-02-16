@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 500px;
+    margin: auto;
+}
+
+.title{
+    padding: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.todoForm{
+    padding: 20px;
+}
+
+.todoTextArea{
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 400px;
+    height: 100px;
+}
+
+.todoAddButton{
+    margin-left: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.todoAddButton:hover{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+
+.deleteIcon{
+    width: 12px;
+}
+
+.deleteIconButton{
+    cursor: pointer;
+    background: none;
+    border: none;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.doneItem{
+    margin-right: 10px;
+    margin-left: 10px;
+    text-decoration: line-through;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+}
+
+.card{
+    box-sizing: border-box;
+    text-align: justify;
+    display: flex;
+
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.textItem{
+    display: inline;
+    overflow: auto;
+    max-height: 100px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headButton{
+    font-size: 20px;
+    font-weight: bold;
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.headButton:hover{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+}
+
+.hideModal{
+    display: none;
+}
