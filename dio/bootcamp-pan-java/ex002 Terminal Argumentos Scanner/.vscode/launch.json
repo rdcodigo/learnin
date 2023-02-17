@@ -1,0 +1,41 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch AboutMe2",
+            "request": "launch",
+            "mainClass": "AboutMe2",
+            "projectName": "ex002 Terminal e Argumentos_59ac070"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch AboutMe",
+            "request": "launch",
+            "mainClass": "AboutMe",
+            "projectName": "ex002 Terminal e Argumentos_59ac070",
+            "args": [
+                "Diego",
+                "Rodrigues",
+                "33",
+                "1.68"
+            ]
+        },
+        {
+            "type": "java",
+            "name": "Launch MinhaClasse",
+            "request": "launch",
+            "mainClass": "MinhaClasse",
+            "projectName": "ex002 Terminal e Argumentos_59ac070"
+        }
+    ]
+}
