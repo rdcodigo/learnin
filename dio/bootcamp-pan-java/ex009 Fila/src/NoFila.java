@@ -1,11 +1,11 @@
-public class NoFila {
-    private Object object;
-    private NoFila refNoFila;
+public class NoFila<T> {
+    private T object;
+    private NoFila<T> refNoFila;
 
     public NoFila(){
     }
 
-    public NoFila(Object object){
+    public NoFila(T object){
         this.refNoFila = null;
         this.object = object;
     }
@@ -14,7 +14,7 @@ public class NoFila {
         return object;
     }
 
-    public void setObject(Object object) {
+    public void setObject(T object) {
         this.object = object;
     }
 
@@ -22,7 +22,7 @@ public class NoFila {
         return refNoFila;
     }
 
-    public void setRefNoFila(NoFila refNoFila) {
+    public void setRefNoFila(NoFila<T> refNoFila) {
         this.refNoFila = refNoFila;
     }
 
