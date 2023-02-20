@@ -1,23 +1,23 @@
 public class Pilha {
 
-    No refNoEntradaPilha = null;
+    NoPilha refNoEntradaPilha = null;
 
-    public void push(No novoNo){
-        No refAuxiliar = refNoEntradaPilha;
+    public void push(NoPilha novoNo){
+        NoPilha refAuxiliar = refNoEntradaPilha;
         refNoEntradaPilha = novoNo;
         refNoEntradaPilha.setRefNo(refAuxiliar);
     }
 
-    public No pop(){
+    public NoPilha pop(){
         if(!isEmpty()){
-            No noPoped = refNoEntradaPilha;
+            NoPilha noPoped = refNoEntradaPilha;
             refNoEntradaPilha = refNoEntradaPilha.getRefNo();
             return noPoped;
         }
         return null;
     }
 
-    public No top(){
+    public NoPilha top(){
         return refNoEntradaPilha;
     }
 
@@ -30,7 +30,7 @@ public class Pilha {
         String stringRetorno = "------------\n";
         stringRetorno += "   Pilha\n";
         stringRetorno += "------------\n";
-        No noAuxiliar = refNoEntradaPilha;
+        NoPilha noAuxiliar = refNoEntradaPilha;
         while(true){
             if(noAuxiliar != null){
                 stringRetorno += "[No{dado=" + noAuxiliar.getDado() + "}]\n";

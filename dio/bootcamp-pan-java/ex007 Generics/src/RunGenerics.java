@@ -1,15 +1,15 @@
-public class Main {
+public class RunGenerics {
 
     public static void main(String[] args){
-        No<String> no1 = new No<String>("Conteúdo no1");
+        NoGenerics<String> no1 = new NoGenerics<String>("Conteúdo no1");
         //Tentar setar o conteúdo como string
-        No<String> no2 = new No<>("Conteúdo no2");
+        NoGenerics<String> no2 = new NoGenerics<>("Conteúdo no2");
         no1.setProximoNo(no2);
 
-        No<String> no3 = new No("Conteúdo no3");
+        NoGenerics<String> no3 = new NoGenerics("Conteúdo no3");
         no2.setProximoNo(no3);
 
-        No<String> no4 = new No("Conteúdo no4");
+        NoGenerics<String> no4 = new NoGenerics("Conteúdo no4");
         no3.setProximoNo(no4);
 
         System.out.println(no1.toStringEncadeado());

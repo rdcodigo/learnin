@@ -1,4 +1,4 @@
-public class Main  {
+public class RunNo  {
 
     public static void main(String[] args){
 

@@ -1,11 +1,11 @@
-public class No {
+public class NoPilha {
     private int dado;
-    private No refNo = null;
+    private NoPilha refNo = null;
 
-    public No() {
+    public NoPilha() {
     }
 
-    public No(int dado) {
+    public NoPilha(int dado) {
         this.dado = dado;
     }
 
@@ -17,11 +17,11 @@ public class No {
         this.dado = dado;
     }
 
-    public No getRefNo() {
+    public NoPilha getRefNo() {
         return refNo;
     }
 
-    public void setRefNo(No refNo) {
+    public void setRefNo(NoPilha refNo) {
         this.refNo = refNo;
     }
 

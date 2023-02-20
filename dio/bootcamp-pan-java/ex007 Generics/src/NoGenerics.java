@@ -1,9 +1,9 @@
-public class No<T> {
+public class NoGenerics<T> {
 
     public T conteudo;
-    public No proximoNo = null;
+    public NoGenerics proximoNo = null;
 
-    public No(T conteudo){
+    public NoGenerics(T conteudo){
         this.conteudo = conteudo;
     }
 
@@ -15,11 +15,11 @@ public class No<T> {
         this.conteudo = conteudo;
     }
 
-    public No getProximoNo() {
+    public NoGenerics getProximoNo() {
         return proximoNo;
     }
 
-    public void setProximoNo(No proximoNo) {
+    public void setProximoNo(NoGenerics proximoNo) {
         this.proximoNo = proximoNo;
     }
 
