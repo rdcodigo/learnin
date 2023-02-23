@@ -8,6 +8,41 @@
             "type": "java",
             "name": "Launch AboutMe2",
             "request": "launch",
+            "mainClass": "principal.AboutMe2",
+            "projectName": "ex002 Terminal Argumentos Scanner_fdb8b393"
+        },
+        {
+            "type": "java",
+            "name": "Launch MinhaClasse",
+            "request": "launch",
+            "mainClass": "main.MinhaClasse",
+            "projectName": "ex002 Terminal Argumentos Scanner_fdb8b393"
+        },
+        {
+            "type": "java",
+            "name": "Launch AboutMe2",
+            "request": "launch",
+            "mainClass": "main.AboutMe2",
+            "projectName": "ex002 Terminal Argumentos Scanner_fdb8b393"
+        },
+        {
+            "type": "java",
+            "name": "Launch AboutMe",
+            "request": "launch",
+            "mainClass": "main.AboutMe",
+            "projectName": "ex002 Terminal Argumentos Scanner_fdb8b393"
+        },
+        {
+            "type": "java",
+            "name": "Launch AboutMe2",
+            "request": "launch",
+            "mainClass": "AboutMe2",
+            "projectName": "ex002 Terminal Argumentos Scanner_fdb8b393"
+        },
+        {
+            "type": "java",
+            "name": "Launch AboutMe2",
+            "request": "launch",
             "mainClass": "AboutMe2",
             "projectName": "ex002 Terminal e Argumentos_59ac070"
         },
