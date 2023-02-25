@@ -1,4 +1,4 @@
-package main;
+package principal;
 
 import java.util.*;
 
@@ -16,6 +16,8 @@ import java.util.*;
 
 public class App {
     public static void main(String[] args) {
+        
+        System.out.println("\n-----------------------------\n");
 
         System.out.println("Crie uma conjunto contendo as cores do arco-íris: ");
         Set<String> coresArcoIris = new HashSet<>();

@@ -1,3 +1,5 @@
+package principal;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -5,6 +7,9 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
+
+        System.out.println("\n-----------------------------\n");
+        
         Scanner scan = new Scanner(System.in);
         List<Double> temperaturas = new ArrayList<Double>();
 
@@ -18,11 +23,13 @@ public class App {
             temperaturas.add(temp);
             count++;
         }
-        System.out.println("-----------------");
+        System.out.println("\n-----------------------------\n");
         
         //exibindo todas as temperaturas:
         System.out.print("Todas as temperaturas: ");
         temperaturas.forEach(t -> System.out.print(t + " "));
+
+        System.out.println("\n-----------------------------\n");
 
         //calculando e exibindo a média das temperaturas:
         double media = temperaturas.stream()
@@ -31,11 +38,15 @@ public class App {
                 .orElse(0d);
         System.out.printf("\nMédia das temperaturas: %.1f\n", media);
 
+        System.out.println("\n-----------------------------\n");
+
         //exibindo as temperaturas acima da média
         System.out.print("Temperaturas acima da média: ");
         temperaturas.stream()
                 .filter(t -> t > media)
                 .forEach(t -> System.out.printf("%.1f ", t));
+
+        System.out.println("\n-----------------------------\n");
 
         //exibindo o mês das temperaturas acima da média por extenso:
         System.out.println("\n\nMeses das temperaturas acima da média: ");

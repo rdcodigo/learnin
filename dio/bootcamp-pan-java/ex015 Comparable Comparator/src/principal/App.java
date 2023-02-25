@@ -1,4 +1,4 @@
-package main;
+package principal;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -12,6 +12,8 @@ import componentes.Gato;
 
 public class App {
     public static void main(String[] args) throws Exception {
+
+        System.out.println("\n-----------------------------\n");
         
         List<Gato> meusGatos = new ArrayList<>(){{
             add(new Gato("Jon", 12, "preto"));
@@ -24,23 +26,33 @@ public class App {
         System.out.println("--\tOrdem de Inserção\t---");
         System.out.println(meusGatos);
 
+        System.out.println("\n-----------------------------\n");
+
         System.out.println("--\tOrdem aleatória\t---");
         Collections.shuffle(meusGatos);
         System.out.println(meusGatos);
 
+        System.out.println("\n-----------------------------\n");
+
         System.out.println("--\tOrdem Natural (Nome)\t---");
         Collections.sort(meusGatos);
         System.out.println(meusGatos);
+
+        System.out.println("\n-----------------------------\n");
 
         System.out.println("--\tOrdem Idade\t---");
 //        Collections.sort(meusGatos, new ComparatorIdade());
         meusGatos.sort(new ComparatorIdade());
         System.out.println(meusGatos);
 
+        System.out.println("\n-----------------------------\n");
+
         System.out.println("--\tOrdem cor\t---");
 //        Collections.sort(meusGatos, new ComparatorCor());
         meusGatos.sort(new ComparatorCor());
         System.out.println(meusGatos);
+
+        System.out.println("\n-----------------------------\n");
 
         System.out.println("--\tOrdem Nome/Cor/Idade\t---");
 //        Collections.sort(meusGatos, new ComparatorNomeCorIdade());
