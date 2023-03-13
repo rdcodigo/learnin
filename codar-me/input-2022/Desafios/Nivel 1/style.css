@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Space Grotesk';
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #D6D4E2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: white;
+    width: 160px;
+    height: 244px;
+    border-radius: 32px;
+    padding: 32px 24px 32px 24px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #787491;
+}
+
+.value {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 28px;
+    color: #18161F;
+}
+
+.box:hover{
+    background-color: #18161F;
+}
+
+.box:hover .text{
+    color: #D6D4E2;
+}
+
+.box:hover .value{
+    color: white;
+}
+
+.box:hover svg path{
+    stroke: #FFFFFF;
+}
