@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Space Grotesk';
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #D6D4E2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: white;
+    width: 340px;
+    height: 80px;
+    border-radius: 16px;
+    padding: 4px 28px;
+    gap: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #18161F;
+}
+
+.description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #49445F;
+}
+
+.hour{
+    color: #787490;
+}
+
+.circle{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/3135/3135715.png");
+    background-size: contain;
+}
